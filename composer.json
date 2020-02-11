@@ -1,0 +1,20 @@
+{
+  "name": "ding/dinglib",
+  "description": "Ding php library",
+  "license": "Apache-2.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "env107",
+      "email": "env107@126.com"
+    }
+  ],
+  "autoload":{
+    "psr-4" : {
+      "dinglib\\dingphp\\" : "src/dingphp/"
+    }
+  },
+  "require": {
+    "php": ">=5.6.*"
+  }
+}
