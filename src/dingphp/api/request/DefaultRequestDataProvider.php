@@ -25,10 +25,12 @@ class DefaultRequestDataProvider extends Object implements RequestDataProviderIm
                 $this->_headers[strtolower(substr($key,5))] = $value;
             }
         }
-        //获取本地访问来源
+        //获取访问来源
         if(!isset($this->_headers['origin'])) {
             $protocol = explode("/",$_SERVER['SERVER_PROTOCOL']);
-            $this->setProperty("host_url" , strtolower($protocol[0])."://".$_SERVER['HTTP_HOST']);
+            $this->setProperty("origin" , strtolower($protocol[0])."://".$_SERVER['HTTP_HOST']);
+        } else {
+            $this->setProperty("origin",$this->_headers['origin']);
         }
         $this->_query = $_GET;
         $this->_data = $_POST;
