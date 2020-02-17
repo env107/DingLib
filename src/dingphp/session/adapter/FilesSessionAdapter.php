@@ -92,4 +92,14 @@ class FilesSessionAdapter implements SessionAdapterImpl
     private function _removeSessionFile($sessionId){
         return unlink($this->_getSessionFile($sessionId));
     }
+
+    /**
+     * 判断会话是否存在
+     * @param $sessionId
+     * @return bool
+     */
+    public function exist($sessionId)
+    {
+        return file_exists($this->_getSessionFile($sessionId));
+    }
 }

@@ -143,5 +143,13 @@ class Session extends Object implements SessionImpl,\SessionHandlerInterface
         return $uuid;
     }
 
-
+    /**
+     * 判断会话是否存在
+     * @param $sessionId
+     * @return bool
+     */
+    public function exist($sessionId)
+    {
+        return $this->_adapter->exist($sessionId);
+    }
 }

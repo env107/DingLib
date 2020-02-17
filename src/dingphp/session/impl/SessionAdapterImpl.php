@@ -33,4 +33,11 @@ interface SessionAdapterImpl
      * @return bool
      */
     public function expires($sessionId);
+
+    /**
+     * 判断会话是否存在
+     * @param $sessionId
+     * @return bool
+     */
+    public function exist($sessionId);
 }
