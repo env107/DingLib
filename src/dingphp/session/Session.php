@@ -129,4 +129,19 @@ class Session extends Object implements SessionImpl,\SessionHandlerInterface
         return session_status() === PHP_SESSION_ACTIVE;
     }
 
+    /**
+     * 生成会话ID
+     * @return string
+     */
+    public static function createId(){
+        $char_id = strtoupper(md5(uniqid(mt_rand(), true)));
+        $hyphen = "";
+        $uuid = substr($char_id, 0, 8).$hyphen
+            .substr($char_id, 8, 4).$hyphen
+            .substr($char_id,12, 4).$hyphen
+            .substr($char_id,16, 4).$hyphen;
+        return $uuid;
+    }
+
+
 }
