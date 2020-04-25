@@ -4,9 +4,9 @@ namespace dinglib\dingphp\api\request;
 
 
 use dinglib\dingphp\api\request\impl\RequestDataProviderImpl;
-use dinglib\dingphp\object\Object;
+use dinglib\dingphp\object\DingObject;
 
-class DefaultRequestDataProvider extends Object implements RequestDataProviderImpl
+class DefaultRequestDataProvider extends DingObject implements RequestDataProviderImpl
 {
 
     private $_headers = [];

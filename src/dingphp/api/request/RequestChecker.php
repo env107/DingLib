@@ -11,9 +11,9 @@ use dinglib\dingphp\exceptions\api\RequestCheckerException;
 use dinglib\dingphp\exceptions\ResultException;
 use dinglib\dingphp\exceptions\TypeException;
 use dinglib\dingphp\lang\Lang;
-use dinglib\dingphp\object\Object;
+use dinglib\dingphp\object\DingObject;
 
-class RequestChecker extends Object implements Executable
+class RequestChecker extends DingObject implements Executable
 {
 
     /**

@@ -4,9 +4,9 @@ namespace dinglib\dingphp\api\json;
 
 
 use dinglib\dingphp\api\json\impl\ApiJsonImpl;
-use dinglib\dingphp\object\Object;
+use dinglib\dingphp\object\DingObject;
 
-class ApiJson extends Object implements ApiJsonImpl
+class ApiJson extends DingObject implements ApiJsonImpl
 {
 
     private $_data = [];

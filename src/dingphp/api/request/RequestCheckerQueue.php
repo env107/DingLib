@@ -7,9 +7,9 @@ use dinglib\dingphp\api\request\impl\RequestCheckerQueueImpl;
 use dinglib\dingphp\api\request\impl\RequestCheckerImpl;
 use dinglib\dingphp\exceptions\api\RequestCheckerException;
 use dinglib\dingphp\lang\Lang;
-use dinglib\dingphp\object\Object;
+use dinglib\dingphp\object\DingObject;
 
-class RequestCheckerQueue extends Object implements RequestCheckerQueueImpl
+class RequestCheckerQueue extends DingObject implements RequestCheckerQueueImpl
 {
     /**
      * 储存校验器队列

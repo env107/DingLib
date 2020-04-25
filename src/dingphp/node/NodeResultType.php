@@ -5,9 +5,9 @@ namespace dinglib\dingphp\node;
 
 use dinglib\dingphp\exceptions\node\NodeResultTypeErrorException;
 use dinglib\dingphp\lang\Lang;
-use dinglib\dingphp\object\Object;
+use dinglib\dingphp\object\DingObject;
 
-class NodeResultType extends Object
+class NodeResultType extends DingObject
 {
 
     const NODE_RESULT_TYPE_STRING = 'string';

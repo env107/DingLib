@@ -9,7 +9,7 @@ use dinglib\dingphp\lang\Lang;
 use dinglib\dingphp\object\impl\Instance;
 use dinglib\dingphp\object\traits\ObjectTrait;
 
-class Object implements Instance
+class DingObject implements Instance
 {
     use ObjectTrait;
     private static $_instancies = [];
@@ -101,7 +101,7 @@ class Object implements Instance
         $class = new \ReflectionClass($classmap);
         $params = self::catchInvisibleParam(func_get_args());
         $object = $class->newInstanceWithoutConstructor();
-        if(!$object instanceof Object){
+        if (!$object instanceof DingObject) {
             throw new TypeException(Lang::get("OBJECT_TYPE_ERROR"));
         }
         $object->initialize($params);

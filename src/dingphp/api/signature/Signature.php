@@ -4,9 +4,9 @@
 namespace dinglib\dingphp\api\signature;
 
 use dinglib\dingphp\api\signature\impl\SignatureImpl;
-use dinglib\dingphp\object\Object;
+use dinglib\dingphp\object\DingObject;
 
-class Signature extends Object implements SignatureImpl
+class Signature extends DingObject implements SignatureImpl
 {
 
     public function initialize(array $params = null)

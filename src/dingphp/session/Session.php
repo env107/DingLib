@@ -4,11 +4,11 @@
 namespace dinglib\dingphp\session;
 
 
-use dinglib\dingphp\object\Object;
+use dinglib\dingphp\object\DingObject;
 use dinglib\dingphp\session\impl\SessionAdapterImpl;
 use dinglib\dingphp\session\impl\SessionImpl;
 
-class Session extends Object implements SessionImpl,\SessionHandlerInterface
+class Session extends DingObject implements SessionImpl, \SessionHandlerInterface
 {
 
     /**

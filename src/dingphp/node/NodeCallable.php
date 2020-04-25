@@ -5,10 +5,10 @@ namespace dinglib\dingphp\node;
 
 
 use dinglib\dingphp\exceptions\node\NodeErrorException;
-use dinglib\dingphp\object\Object;
+use dinglib\dingphp\object\DingObject;
 use dinglib\dingphp\object\traits\ObjectTrait;
 
-class NodeCallable extends Object
+class NodeCallable extends DingObject
 {
     use ObjectTrait;
     private $_data = null;

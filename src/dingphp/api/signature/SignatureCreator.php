@@ -5,10 +5,10 @@ namespace dinglib\dingphp\api\signature;
 
 use dinglib\dingphp\api\signature\impl\SignatureCreatorImpl;
 use dinglib\dingphp\node\NodeResultType;
-use dinglib\dingphp\object\Object;
+use dinglib\dingphp\object\DingObject;
 use dinglib\dingphp\node\NodeCallable;
 
-class SignatureCreator extends Object implements SignatureCreatorImpl
+class SignatureCreator extends DingObject implements SignatureCreatorImpl
 {
 
     /**
